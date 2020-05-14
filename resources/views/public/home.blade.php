@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('inc.main',['meta_title'=>'Home'])
 
 @section('content')
 <div class="container">
