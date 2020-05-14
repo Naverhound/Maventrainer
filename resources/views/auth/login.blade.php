@@ -6,9 +6,11 @@
             <div class="card bg-transparent text-light" >
                 <div class="card-title">
                     <div class="container">
-                        <a class="navbar-brand" href="{{ route('home') }}">
+                        <div class="row">
+                            <a class="navbar-brand mt-3 justify-content-center" href="{{ route('home') }}">
                             {{ config('app.name', 'Laravel') }}
-                        </a>
+                            </a>
+                        </div>                        
                     </div>
                 </div>
                 <div class="card-body ">

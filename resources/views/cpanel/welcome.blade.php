@@ -1,1 +1,1 @@
-@extends('inc.main')
+@extends('inc.main',['meta_title'=>'Home'])

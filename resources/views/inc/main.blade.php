@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="en">
-@extends('inc.head',['meta_title'=>'Home'])
+@include('inc.head')
 
 <body>
     <!--[if lt IE 8]>
