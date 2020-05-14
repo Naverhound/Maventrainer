@@ -1,17 +1,21 @@
-@extends('layouts.app')
+@extends('layouts.app',['meta_title'=>'Login'])
 
 @section('content')
-<div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-
-                <div class="card-body">
+        <div class="col-md-8" >
+            <div class="card bg-transparent text-light" >
+                <div class="card-title">
+                    <div class="container">
+                        <a class="navbar-brand" href="{{ route('home') }}">
+                            {{ config('app.name', 'Laravel') }}
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body ">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
-                        <div class="form-group row">
+                        <div class="form-group row ">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
@@ -65,9 +69,12 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div>            
+                <div class="card-footer text-muted">
+                    @include('auth.authlinks')
+                </div>                
             </div>
         </div>
     </div>
-</div>
+
 @endsection
