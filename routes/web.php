@@ -13,10 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::group(['prefix' => 'home'], function () {
+    Route::get('/', 'HomeController@index')->name('home');
+    Route::get('hola', 'HomeController@index')->name('home.prueba');
+    
+});
+
+Route::group(['prefix' => 'cpanel'], function () {
+    
 });
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
