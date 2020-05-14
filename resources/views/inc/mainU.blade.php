@@ -8,18 +8,20 @@
         <![endif]-->
 
    <!--sidebar-->
-
+        @include('inc.sidebar')
 
     <!-- Start Welcome area -->
     <div class="all-content-wrapper">
         
         <!--header-->
-        @yield('content')
+        @include('inc.navbar')
         <!--contenido-->
-
+        @section('name')
+            
+        @endsection
         
         <!--footer-->
-
+        @include('inc.footer')
     </div>
     
 </body>

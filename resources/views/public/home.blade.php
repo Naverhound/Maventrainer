@@ -1,4 +1,4 @@
-@extends('inc.main',['meta_title'=>'fdsakl'])
+@extends('inc.mainU',['meta_title'=>'AlaCHAVAL'])
 
 @section('content')
 <div class="container">
