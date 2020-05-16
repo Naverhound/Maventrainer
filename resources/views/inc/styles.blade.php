@@ -47,6 +47,7 @@
         <!-- style CSS
             ============================================ -->
         <link rel="stylesheet" href="{{asset('/dash/style.css')}}">
+        <link rel="stylesheet" href="{{asset('/dash/css/dropzone/dropzone.css')}}">
         <!-- responsive CSS
             ============================================ -->
         <link rel="stylesheet" href="{{asset('/dash/css/responsive.css')}}">

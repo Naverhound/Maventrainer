@@ -22,6 +22,7 @@
     "Page Expired": "Página Expirada",
     "Page Not Found": "Página no encontrada",
     "Password": "Contraseña",
+    "Repeat Password": "Repetir Contraseña",
     "Please click the button below to verify your email address.": "Por favor, haga clic en el botón de abajo para verificar su dirección de correo electrónico.",
     "Please confirm your password before continuing.": "Por favor, confirma tu contraseña antes de continuar.",
     "Regards": "Saludos",
@@ -45,5 +46,19 @@
     "Your email address is not verified.": "Tu dirección de correo electrónico no está verificada.",
     "Whoops!": "¡Vaya!",
     "Home": "Inicio",
-    "Administrator":"Administrador"
+    "Administrator":"Administrador",
+    "Welcome Back":"Bienvenido de vuelta",
+    "Login with":"Entrar con",
+    "Enter Email Address or Nickname": "Dirección de email o Nickname",
+    "Join to the family": "Únete a la familia",
+    "As User":"Como Usuario",
+    "As Trainer": "Como Entrenador",
+    "Email":"Correo Electrónico",
+    "Names":"Nombres",
+    "Last Names":"Apellidos",
+    "State":"Estado",
+    "City/Municipality":"Ciudad/Municipio",
+    "Drop files here or click to upload":"Arrastre archivos aqui o dar click para subir archivos",
+    "This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.":"Esto es solo una DropZone de demo. Los archivos no se subiran realmente.",
+    "Choose Profile Pick":"Elegir Foto de Perfil"
   }

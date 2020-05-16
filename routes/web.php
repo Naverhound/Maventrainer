@@ -21,6 +21,7 @@ Route::group(['prefix' => 'home'], function () {
 });
 
 Route::group(['prefix' => 'cpanel'], function () {
+    Route::get('/', 'CPanelController@index')->name('cpanel.home');
     
 });
 

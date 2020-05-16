@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUserinfosTable extends Migration
+class CreateTrainersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,11 @@ class CreateUserinfosTable extends Migration
      */
     public function up()
     {
-        Schema::create('userinfos', function (Blueprint $table) {
+        Schema::create('trainers', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->string('name');
-            $table->string('lastname');
-            $table->string('img');
-            $table->string('email');
-            $table->timestamp('email_verified_at')->nullable();
+            $table->string('state');
+            $table->string('city');
             $table->timestamps();
         });
     }
@@ -32,6 +29,6 @@ class CreateUserinfosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('userinfos');
+        Schema::dropIfExists('trainers');
     }
 }
