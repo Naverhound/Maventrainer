@@ -41,9 +41,9 @@
                                   <label class="custom-control-label" for="customCheck">{{__('Remember Me')}}</label>
                                 </div>
                               </div>
-                              <a href="index.html" class="btn btn-primary btn-user btn-block">
-                                {{__('Login')}}
-                              </a>
+                              <div class="row">
+                                <button  class="btn btn-primary btn-user btn-block">{{__('Login')}}</button>
+                              </div>
                               <hr>
                               <a href="index.html" class="btn btn-google btn-user btn-block">
                                   <i class="fa fa-google" aria-hidden="true"></i> {{__('Login with')}} Google

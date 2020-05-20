@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
+use App\Userinfo;
+use App\Trainer;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -49,11 +51,22 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        return Validator::make($data, [
+        //dd($data);
+        $rules=[
+            'nick' => ['required', 'string', 'max:20'],
             'name' => ['required', 'string', 'max:255'],
+            'lastname' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-        ]);
+        ];
+        if(array_key_exists('trainer',$data)){
+            //dd($data);
+            $rules['state']=['required'];
+            $rules['city']=['required'];
+            //dd($rules);
+        }
+        //dd($data);
+        return Validator::make($data,$rules );
     }
 
     /**
@@ -64,12 +77,34 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        //dd($data);
+        
         $user=User::create([
-            'name' => $data['name'],
+            'nick' => $data['nick'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'rol_id' => '2',
+            'slug' => uniqid('',true)
         ]);
-        dd($user);//FIXME: EHHHHHH!!! estó esta momentaneo para interrumpir la acción y ver que se está regresandoo
+        $userinfo=Userinfo::create([
+            'user_id'=> $user['id'],
+            'name'=> $data['name'],
+            'lastname'=> $data['lastname'],
+            'img'=> 'defaultusr.jpg',
+
+        ]);
+
+        if(array_key_exists('trainer',$data)){
+            //dd($data);
+            $trainer=Trainer::create([
+                'user_id'=> $user['id'],
+                'state'=> $data['state'],
+                'city'=> $data['city']
+            ]);
+           $user->update(['rol_id'=>'1']);
+        }
+        //dd($user->load('userinfos'));//FIXME: EHHHHHH!!! estó esta momentaneo para interrumpir la acción y ver que se está regresandoo
+        //dd($trainer);
         return $user;
     }
 }
