@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::group(['prefix' => 'home'], function () {
+Route::group(['prefix' => 'home' , 'middleware'=>'auth'], function () {
     Route::get('/', 'HomeController@index')->name('home');
     Route::get('hola', 'HomeController@index')->name('home.prueba');
     

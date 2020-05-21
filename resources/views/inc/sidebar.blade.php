@@ -7,7 +7,8 @@
         <div class="nalika-profile">
             <div class="profile-dtl">
                 <a href="#"><img src="img/notification/4.jpg" alt="" /></a>
-                <h2>Lakian <span class="min-dtn">Das</span></h2>
+                
+                <h2>{{Auth::user()->userinfos->name}}<span class="min-dtn"> {{Auth::user()->userinfos->lastname}}</span></h2>
             </div>
            
         </div>
