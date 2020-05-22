@@ -6,9 +6,11 @@
         </div>
         <div class="nalika-profile">
             <div class="profile-dtl">
-                <a href="#"><img src="img/notification/4.jpg" alt="" /></a>
-                
-                <h2>{{Auth::user()->userinfos->name}}<span class="min-dtn"> {{Auth::user()->userinfos->lastname}}</span></h2>
+                <a href="#"><img src="{{asset('img/defaultusr.jpeg')}}" alt="" /></a>
+                @isset(Auth::user()->userinfos)
+                    <h2>{{Auth::user()->userinfos->name}}<span class="min-dtn"> {{Auth::user()->userinfos->lastname}}</span></h2>
+                @endisset                
+                <h2>Maven<span class="min-dtn"> Trainer</span></h2>
             </div>
            
         </div>

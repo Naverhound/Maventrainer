@@ -9,6 +9,6 @@ class CPanelController extends Controller
     public function index()
     {
         # code...
-        return view('cpanel.welcome');
+        return view('cpanel.cpanel');
     }
 }

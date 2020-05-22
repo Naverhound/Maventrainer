@@ -31,9 +31,9 @@
         }
 
         #frame {
-        min-height: 300px;
+        min-height: 100%;
         max-height: 720px;
-        background: #E6EAEA;
+        background: rgb(2, 43, 43);
         }
         @media screen and (max-width: 360px) {
         #frame {
