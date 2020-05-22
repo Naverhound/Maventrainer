@@ -51,6 +51,11 @@ padding: 0
 }
 .clear{clear:both}
 body {}
+.footer {
+    position: absolute;
+ bottom: 0;
+ width: 100%;
+}
 
 .mg-tb-30{
 	margin:30px 0px;
@@ -274,6 +279,7 @@ ul.dtl-social li a{
 	font-size:20px;
 	color:#fff;
 }
+
 .mini-navbar .menu-switcher-pro {
     transition: all 0.3s;
 }
@@ -289,7 +295,6 @@ ul.dtl-social li a{
     background: #1b2a47;
     padding: 20px 0px;
     text-align: center;
-    margin-top: 57.8%;
 }
 .footer-copy-right p {
     margin: 0px;

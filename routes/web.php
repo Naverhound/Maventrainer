@@ -12,9 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-
-Route::group(['prefix' => 'home'], function () {
+Route::get('/chat', function () {
+   return view('public.chat'); 
+});
+Route::get('/', function () {
+    return view('public.home'); 
+ });
+Route::group(['prefix' => 'home' , 'middleware'=>'auth'], function () {
     Route::get('/', 'HomeController@index')->name('home');
     Route::get('hola', 'HomeController@index')->name('home.prueba');
     
