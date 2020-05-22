@@ -7,15 +7,21 @@
         <div class="nalika-profile">
             <div class="profile-dtl">
                 <a href="#"><img src="img/notification/4.jpg" alt="" /></a>
-                <h2>Lakian <span class="min-dtn">Das</span></h2>
+                <h2>Maventrainer</h2>
             </div>
            
         </div>
         <div class="left-custom-menu-adp-wrap comment-scrollbar">
             <nav class="sidebar-nav left-sidebar-menu-pro">
                 <ul class="metismenu" id="menu1">
-                   
-                   
+                    <li>
+                        <a href="#" aria-expanded="false"><i class="icon nalika-new-file icon-wrap"></i> <span class="mini-click-non">Inicio</span></a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" aria-expanded="false"><i class="fa fa-twitch "></i> <span class="mini-click-non">Mis Entrenamientos</span></a>
+                        
+                    </li>
                     <li id="removable">
                         <a class="has-arrow" href="#" aria-expanded="false"><i class="icon nalika-new-file icon-wrap"></i> <span class="mini-click-non">Pages</span></a>
                         <ul class="submenu-angle" aria-expanded="false">
@@ -25,6 +31,7 @@
                             <li><a title="Password Recovery" href="password-recovery.html"><span class="mini-sub-pro">Password Recovery</span></a></li>
                         </ul>
                     </li>
+                   
                 </ul>
             </nav>
         </div>
