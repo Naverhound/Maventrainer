@@ -11,6 +11,7 @@
                     <h2>{{Auth::user()->userinfos->name}}<span class="min-dtn"> {{Auth::user()->userinfos->lastname}}</span></h2>
                 @endisset                
                 <h2>Maven<span class="min-dtn"> Trainer</span></h2>
+                
             </div>
            
         </div>
