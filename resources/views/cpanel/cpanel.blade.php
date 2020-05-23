@@ -2,6 +2,6 @@
 
 @section('content')
 
-   <h1>fdsjklañ </h1>
+jkfdlsñajk
  
 @endsection

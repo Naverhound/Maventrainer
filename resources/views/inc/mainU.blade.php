@@ -16,6 +16,32 @@
         <!--header-->
         @include('inc.navbar')
         <!--contenido-->
+        <div class="breadcome-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="breadcome-list">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="breadcomb-wp">
+                                        <div class="breadcomb-icon">
+                                            <i class="icon nalika-home"></i>
+                                        </div>
+                                        <div class="breadcomb-ctn">
+                                            <h2 class="text-center">Maventrainer</h2>
+                                            <p class="text-center">Bienvenido a tu plataforma de entrenamientos personales. 
+                                                Esperamos que encuentres el tipo de entrenamiento que estas buscando.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="product-new-list-area">
             <div class="container-fluid">
                 <div class="row">
@@ -26,7 +52,7 @@
                                 <a href="#">
                                     <h2>$280</h2>
                                 </a>
-                                <a href="#" class="btn-small">Now</a>
+                                
                                 <div class="product-action">
                                     <ul>
                                         <li>
@@ -53,11 +79,12 @@
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                         <div class="single-new-trend mg-t-30">
                             <a href="#"><img src="{{asset('/dash/img/new-product/5.png')}}" alt=""></a>
+                            
                             <div class="overlay-content">
                                 <a href="#">
                                     <h2>$280</h2>
                                 </a>
-                                <a href="#" class="btn-small">Now</a>
+                                
                                 <div class="product-action">
                                     <ul>
                                         <li>
@@ -71,6 +98,7 @@
                                 <a href="#">
                                     <h4>Princes Diamond</h4>
                                 </a>
+                                
                                 <div class="pro-rating">
                                     <i class="fa fa-star color"></i>
                                     <i class="fa fa-star color"></i>
@@ -78,8 +106,11 @@
                                     <i class="icon nalika-half-filled-rating-star color"></i>
                                     <i class="icon nalika-half-filled-rating-star"></i>
                                 </div>
+                                
                             </div>
+                            
                         </div>
+                        
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                         <div class="single-new-trend mg-t-30">

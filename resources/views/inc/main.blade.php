@@ -11,12 +11,12 @@
    <!--sidebar-->
     @include('inc.sidebar')
    
-          
+    <div class="all-content-wrapper"></div>
          <!--header-->
        @include('inc.navbar')
         <!--contenido-->
         @yield('content')
-        
+    </div>
         <!--footer-->
         @include('inc.footer')
 

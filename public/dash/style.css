@@ -880,7 +880,10 @@ ul.breadcome-menu li a:hover{
     display: flex;
 }
 .breadcomb-ctn {
-    margin-left: 20px;
+    margin-left: 2%;
+}
+.breadcomb-icon{
+    margin-left:18%;
 }
 .breadcomb-icon i {
     font-size: 20px;
@@ -3674,15 +3677,11 @@ th.fc-day-header.fc-widget-header {
 	color:#fff;
 }
 
-.product-new-list-area {
-    margin-top: 2%;
-}
+
+
+
 .breadcome-area{
 margin-top:1%;
 }
-.vid{
-    margin-top: 2.3%;
-    padding-left: 3%;
-    padding-right: 3%; 
-    scroll-behavior: unset;
-}
+
+
