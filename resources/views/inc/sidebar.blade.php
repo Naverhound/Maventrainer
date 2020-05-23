@@ -17,7 +17,7 @@
         <div class="left-custom-menu-adp-wrap comment-scrollbar">
             <nav class="sidebar-nav left-sidebar-menu-pro">
                 <ul class="metismenu" id="menu1">
-                   
+                  
                    
                     <li id="removable">
                         <a class="has-arrow" href="#" aria-expanded="false"><i class="icon nalika-new-file icon-wrap"></i> <span class="mini-click-non">Pages</span></a>
@@ -27,6 +27,9 @@
                             <li><a title="Lock" href="lock.html"><span class="mini-sub-pro">Lock</span></a></li>
                             <li><a title="Password Recovery" href="password-recovery.html"><span class="mini-sub-pro">Password Recovery</span></a></li>
                         </ul>
+                    </li>
+                    <li id="removable">
+                        <a class="" href="/chat" aria-expanded="false"><i class="icon nalika-new-file icon-wrap"></i> <span class="mini-click-non">Chat</span></a>
                     </li>
                 </ul>
             </nav>
