@@ -1,0 +1,1 @@
+@extends('inc.inside',['meta_title'=>'Ejercicios'])
