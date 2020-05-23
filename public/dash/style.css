@@ -3680,3 +3680,15 @@ th.fc-day-header.fc-widget-header {
 margin-top:1%;
 }
 
+.product-new-list-area {
+    margin-top: 2%;
+}
+.breadcome-area{
+margin-top:1%;
+}
+.vid{
+    margin-top: 2.3%;
+    padding-left: 3%;
+    padding-right: 3%; 
+    scroll-behavior: unset;
+}

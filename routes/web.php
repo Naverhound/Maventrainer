@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/inside', function () {
+    return view('public.inside'); 
+ });
 Route::get('/chat', function () {
    return view('public.chat'); 
 });

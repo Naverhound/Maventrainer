@@ -27,6 +27,12 @@
                         
                     </li>
                     <li id="removable">
+                        <a class="has-arrow" href="#" aria-expanded="false"><i class="icon nalika-new-file icon-wrap"></i> <span class="mini-click-non">Semana 1</span></a>
+                        <ul class="submenu-angle" aria-expanded="false">
+                            <li><a title="Video" href=""><span class="mini-sub-pro">Video 1</span></a></li>
+                        </ul>
+                    </li>
+                    <li id="removable">
                         <a class="has-arrow" href="#" aria-expanded="false"><i class="icon nalika-new-file icon-wrap"></i> <span class="mini-click-non">Pages</span></a>
                         <ul class="submenu-angle" aria-expanded="false">
                             <li><a title="Login" href="login.html"><span class="mini-sub-pro">Login</span></a></li>
