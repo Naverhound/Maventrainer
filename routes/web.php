@@ -25,7 +25,7 @@ Route::group(['prefix' => 'home' , 'middleware'=>'auth'], function () {
 });
 
 Route::group(['prefix' => 'cpanel', 'middleware'=>'auth'], function () {
-    Route::get('/', 'CPanelController@index')->name('cpanel.home');
+    Route::get('/', 'cpanel\CPanelController@index')->name('cpanel.home');
     
 });
 
